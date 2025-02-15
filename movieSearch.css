@@ -52,10 +52,10 @@ h1{
 
 /* movie Container Div Style START */
 
-#moviesContainer {
+ #moviesContainer {
     width: 90%;
     display: grid;
-    grid-template-columns: repeat(4, minmax(200px, 1fr)); /* Responsive Grid */
+    grid-template-columns: repeat(4, minmax(200px, 1fr)); 
     gap: 20px;
     padding: 20px;
     justify-content: center;
@@ -92,6 +92,27 @@ h1{
 }
 
 
+/* movie Container Div Style Update or added below codes style below this to make mobile phone responsive, above codes style working properly in computer screen ##START */
+/* Media queries for responsiveness */
+@media (max-width: 1200px) {
+    #moviesContainer {
+        grid-template-columns: repeat(3, minmax(200px, 1fr));
+    }
+}
+
+@media (max-width: 900px) {
+    #moviesContainer {
+        grid-template-columns: repeat(2, minmax(200px, 1fr));
+    }
+}
+
+@media (max-width: 600px) {
+    #moviesContainer {
+        grid-template-columns: repeat(1, minmax(200px, 1fr));
+    }
+}
+
+/* Loader Style */
 #loading{
     display: none;
     margin-bottom: 40px;
